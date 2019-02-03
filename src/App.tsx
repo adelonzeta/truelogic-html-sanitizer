@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import replace from 'lodash/replace'
 
 export default () => {
-  const [state, dispatch] = useState('Paste your HTML here...')
+  const [state, dispatch] = useState('')
 
   function sanitize(e: React.ChangeEvent<HTMLTextAreaElement>) {
     let newHTML = ''
@@ -17,14 +17,10 @@ export default () => {
   }
 
   return (
-    <div>
-      <textarea
-        id="textarea"
-        cols={30} 
-        rows={10} 
-        onChange={sanitize}
-        value={state}>
-      </textarea>
-    </div>
+    <textarea
+      id="textarea"
+      onChange={sanitize}
+      value={state}>
+    </textarea>
   )
 }

@@ -1,0 +1,19 @@
+body {
+  background-color: #37474F;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+textarea {
+  background-color: #263238;
+  color: #CFD8DC;
+  border: none;
+  width: 60vw;
+  height: 60vh;
+  resize: none;
+  outline: none;
+  padding: 2%;
+}
