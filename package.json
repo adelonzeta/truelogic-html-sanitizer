@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,8 +33,10 @@
     "@types/react-dom": "^16.0.11",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react-test-renderer": "^16.7.0",
+    "terser": "^3.14.1",
     "typescript": "^3.3.1"
   }
 }
